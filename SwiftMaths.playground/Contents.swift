@@ -1,14 +1,14 @@
 
 import UIKit
 
-func roundToN(decimalNumber: Double, numberOfDecimals: Int) -> Double {
-    let powerValue: Double = pow(Double(10), Double(numberOfDecimals))
-    return (round(powerValue * decimalNumber) / powerValue)
+func roundToPlaces(decimalNumber: Double, places: Int) -> Double {
+    let divisor = pow(10.0, Double(places))
+    return round(decimalNumber * divisor) / divisor
 }
 
-roundToN(10035.114, numberOfDecimals: 2)
-roundToN(10035.129, numberOfDecimals: 2)
-roundToN(10035.139, numberOfDecimals: 2)
+roundToPlaces(10035.114, places: 2)
+roundToPlaces(10035.129, places: 2)
+roundToPlaces(10035.139, places: 2)
 
 
 
