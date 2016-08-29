@@ -2,10 +2,10 @@
 
 Playground demonstration for rounding a double number to N number of decimal places.
 
-# How can you use it?
+## How can you use it?
 Best way to use it by making its Category.
 
-CategoryName: Double+Rounding
+**CategoryName: Double+Rounding**
 
 ```
 import Foundation
@@ -19,5 +19,5 @@ extension Double {
 }
 ```
 
-There are multiple ways to achive this but I prefer this way. Hope this can help!
+There are multiple ways to achive this but I prefer this way. Hope this can help! 👍
 
