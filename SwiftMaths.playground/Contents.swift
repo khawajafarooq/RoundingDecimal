@@ -6,9 +6,9 @@ func roundToPlaces(decimalNumber: Double, places: Int) -> Double {
     return round(decimalNumber * divisor) / divisor
 }
 
-roundToPlaces(10035.114, places: 2)
-roundToPlaces(10035.129, places: 2)
-roundToPlaces(10035.139, places: 2)
+roundToPlaces(decimalNumber: 10035.114, places: 2)
+roundToPlaces(decimalNumber: 10035.129, places: 2)
+roundToPlaces(decimalNumber: 10035.139, places: 2)
 
 
 
