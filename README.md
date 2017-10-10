@@ -1,6 +1,6 @@
-# Rounding Double Numbers (Swift)
+# Rounding Double
 
-Playground demonstration for rounding a double number to N number of decimal places.
+Playground demonstration for rounding a double number to N places.
 
 ## How can you use it?
 Make it a part of your own extension ⚙
