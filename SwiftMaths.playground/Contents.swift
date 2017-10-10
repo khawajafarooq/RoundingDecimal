@@ -1,14 +1,17 @@
+import Foundation
 
-import UIKit
-
-func roundToPlaces(decimalNumber: Double, places: Int) -> Double {
-    let divisor = pow(10.0, Double(places))
-    return round(decimalNumber * divisor) / divisor
+extension Double {
+    
+    mutating func roundToPlaces(places: Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return Darwin.round(self * divisor) / divisor
+    }
 }
 
-roundToPlaces(decimalNumber: 10035.114, places: 2)
-roundToPlaces(decimalNumber: 10035.129, places: 2)
-roundToPlaces(decimalNumber: 10035.139, places: 2)
+var decimal = 10035.11459
+print(decimal.roundToPlaces(places: 2))
+print(decimal.roundToPlaces(places: 3))
+print(decimal.roundToPlaces(places: 4))
 
 
 
